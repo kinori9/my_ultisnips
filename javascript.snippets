@@ -7,8 +7,7 @@ const ${1:name} = () => {
 	return (
 		<div>
 		${2:content}
-		</div>
-	);
+		</div>);
 };
 endsnippet
 
@@ -25,11 +24,24 @@ const db = require('${1: db_path}');
 
 module.exports = router;
 endsnippet
+
 snippet  db_query
 db.query(sql, ${1: arc}, (err, data) => {
 
 });
 endsnippet
+
 snippet .div
 <div className=${1: className}></div>
+endsnippet
+
+snippet react_init
+const ${1: first} = () => {
+	return (
+		<div>
+		</div>
+   );
+}
+
+export default ${2: second};
 endsnippet
