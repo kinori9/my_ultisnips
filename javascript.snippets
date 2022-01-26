@@ -2,12 +2,25 @@ snippet cl
 console.log(${1:value});
 endsnippet
 
+snippet rchd
+const ${1:name} = () => {
+	return (
+		<div>
+		${2:content}
+		</div>
+	);
+};
+
+exports default ${3:name};
+endsnippet
+
 snippet rch 
 const ${1:name} = () => {
 	return (
 		<div>
 		${2:content}
-		</div>);
+		</div>
+	);
 };
 endsnippet
 
@@ -31,7 +44,7 @@ db.query(sql, ${1: arc}, (err, data) => {
 });
 endsnippet
 
-snippet .div
+snippet div.
 <div className=${1: className}></div>
 endsnippet
 
