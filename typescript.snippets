@@ -1,0 +1,68 @@
+snippet cl
+console.log(${1:value});
+endsnippet
+
+snippet rchd
+const ${1:name} = () => {
+	return (
+		<div>
+		${2:content}
+		</div>
+	);
+};
+
+export default ${3:name};
+endsnippet
+
+snippet rch 
+const ${1:name} = () => {
+	return (
+		<div>
+		${2:content}
+		</div>
+	);
+};
+endsnippet
+
+snippet rcf 
+const ${1:name} = () => {
+	${2:content}
+};
+endsnippet
+
+snippet express_init 
+const express = require('express');
+const router = express.Router();
+const db = require('${1: db_path}');
+
+module.exports = router;
+endsnippet
+
+snippet  db_query
+db.query(sql, ${1: arc}, (err, data) => {
+
+});
+endsnippet
+
+snippet div.
+<div className=${1: className}></div>
+endsnippet
+
+snippet react_init
+const ${1: first} = () => {
+	return (
+		<div>
+		</div>
+   );
+}
+
+export default ${2: second};
+endsnippet
+
+snippet reducer_action
+export const ${1: functionName} = () => {
+	return {
+		type: ${2: typeName}
+	}
+}
+endsnippet
